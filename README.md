@@ -5,15 +5,21 @@ application up and running.
 
 Things you may want to cover:
 
-* Ruby version
+* Ruby version 3.0.1
 
 * System dependencies
 
 * Configuration
 
+`docker-compose build`
+
 * Database creation
 
+`docker-compose run runner yarn install` 
+
 * Database initialization
+
+`docker-compose run runner ./bin/setup` 
 
 * How to run the test suite
 
@@ -21,4 +27,9 @@ Things you may want to cover:
 
 * Deployment instructions
 
-* ...
+## Development
+
+`docker-compose run --rm runner`
+
+##  Deploy Rails
+ `docker-compose run --rm rails`
